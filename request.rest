@@ -1,0 +1,23 @@
+### GET ALL DATA 
+GET http://localhost:3000/user
+
+### CREATE DATA
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "email": "user2@gmail.com",
+    "name": "user2"
+}
+
+### UPDATE DATA
+PATCH http://localhost:3000/user/1
+Content-Type: application/json
+
+{
+    "email" : "testing@gmail.com",
+    "name" : "testing guys"
+}
+
+### DELETE DATA
+DELETE http://localhost:3000/user/4
